@@ -21,7 +21,7 @@
       <p>To try JS-in-CSS, add this script tag to your markup</p>
       <pre>
         <code>
-          &lt;script src="https://js-in-css.vercel.app/script.js" defer&gt;&lt;/script&gt;
+&lt;script src="https://js-in-css.vercel.app/script.js" defer&gt;&lt;/script&gt;
         </code>
       </pre>
       <p>
@@ -29,9 +29,9 @@
       </p>
       <pre>
         <code>
-          h1 {
-            content: "console.log('hello world!')"
-          }
+h1 {
+  content: "console.log('hello world!')"
+}
         </code>
       </pre>
       <p>
@@ -53,9 +53,9 @@
       </p>
       <pre>
         <code>
-          h1 {
-            content: "console.log(this.innerText)"
-          }
+h1 {
+  content: "console.log(this.innerText)"
+}
         </code>
       </pre>
       <p>
@@ -65,16 +65,14 @@
       <p>
         Since each piece of code is executed in a separate function (and a separate scope), we need a way to assign global variables. Thankfully, we can use <code>window</code> to do this (<em>this is really cursed</em>)
       </p>
-      <pre>
-        <code>
-          h1 {
-            content: "window.header = this"
-          }
-          p {
-            content: "this.innerText = window.header.innerText"
-          }
-        </code>
-      </pre>
+      <pre><code>
+h1 {
+  content: "window.header = this"
+}
+p {
+  content: "this.innerText = window.header.innerText"
+}
+        </code></pre>
       <h3>Ordering code</h3>
       <p>
         Since the executor recursively travels through the DOM, if you want to use variables in a later function, put the element that sets them earlier in the document
