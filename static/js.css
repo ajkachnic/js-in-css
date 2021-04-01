@@ -2,35 +2,35 @@ h1 {
  content: "this.innerText = 'JS-in-CSS'; console.log('hello from js in css')"
 }
 
-main > p:nth-of-type(1) {
+main > p:first-of-type {
   content: "this.innerHTML = 'React and other JavaScript frameworks have popularized the CSS in JS approach, but what if we did the reverse? Introducing: <em>JavaScript in CSS</em>'";
 }
 
-section:nth-of-type(1) > h2 {
+section:first-of-type > h2 {
   content: "this.innerText = 'Get Started'"
 }
-section:nth-of-type(1) > p:first-of-type {
+section:first-of-type > p:first-of-type {
   content: "this.innerText = 'To try JS-in-CSS, add this script tag to your markup'"
 }
-section:nth-of-type(1) > pre:nth-of-type(1) code {
+section:first-of-type > pre:first-of-type code {
   content: "this.innerHTML = '&lt;script src=\"https://js-in-css.vercel.app/script.js\" defer&gt;&lt;/script&gt;'"
 }
-section:nth-of-type(1) > p:nth-of-type(2) {
+section:first-of-type > p:nth-of-type(2) {
   content: "this.innerText = 'Then, in your CSS, you can write code like this:'"
 }
-section:nth-of-type(1) > p:nth-of-type(2) {
+section:first-of-type > p:nth-of-type(2) {
   content: "this.innerText = 'This code will be executed for any DOM element that the selector applies to. Therefore, it is a good idea to use IDs to avoid the same code executing multiple times.'"
 }
-section:nth-of-type(1) > p:nth-of-type(3) {
+section:first-of-type > p:nth-of-type(3) {
   content: "this.innerHTML = 'Note that since the <code>content</code> property is used to store your JavaScript, JS-in-CSS will not work with pseudo elements (but they&apos;re fake anyway)'";
 }
 section:nth-of-type(2) > h2 {
   content: "this.innerHTML = 'Advanced features'";
 }
-section:nth-of-type(2) > h3:nth-of-type(1) {
+section:nth-of-type(2) > h3:first-of-type {
   content: "this.innerHTML = '<code>this</code> Access'";
 }
-section:nth-of-type(2) > p:nth-of-type(1) {
+section:nth-of-type(2) > p:first-of-type {
   content: "this.innerText = 'For every JavaScript element that is executed, <code>this</code> is bound to a reference to the DOM object. This means you can write CSS like this:'"
 }
 section:nth-of-type(2) > p:nth-of-type(2) {
@@ -52,10 +52,10 @@ section:nth-of-type(2) > p:nth-of-type(4) {
 section:nth-of-type(3) > h2 {
   content: "this.innerHTML = 'Frequently Asked Questions'";
 }
-section:nth-of-type(3) > h3:nth-of-type(1) {
+section:nth-of-type(3) > h3:first-of-type {
   content: "this.innerText = 'Does this really work?'";
 }
-section:nth-of-type(3) > p:nth-of-type(1) {
+section:nth-of-type(3) > p:first-of-type {
   content: "this.innerHTML = 'Yes it does! In fact, this entire site is rendered with it (minus the code blocks because they&apos;re annoying). Don&apos;t believe me? Check your console ;)'";
 }
 section:nth-of-type(3) > h3:nth-of-type(2) {
