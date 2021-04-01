@@ -15,8 +15,8 @@ const apply = element => {
       return fn.call(element)
     } catch (err){ 
       console.error(`Error Found when running code:
-      console.error(err)
 ${code}`)
+      console.error(err)
     }
   }
 
