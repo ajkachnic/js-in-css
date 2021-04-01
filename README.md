@@ -1,5 +1,7 @@
 # JS-in-CSS
 
+[Visit the website](https://js-in-css.vercel.app)
+
 React and other JavaScript frameworks have popularized the CSS in JS
 approach, but what if we did the reverse? Introducing: *JavaScript in
 CSS*
@@ -9,7 +11,7 @@ CSS*
 To try JS-in-CSS, add this script tag to your markup
 
 ```html
-<script src="https://js-in-css.now.sh/script.js" defer></script>
+<script src="https://js-in-css.vercel.app/script.js" defer></script>
 ```
 
 Then, in your CSS, you can write code like this:
